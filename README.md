@@ -27,19 +27,18 @@ datacompose-demo/
 
 - Docker and Docker Compose
 - Python 3.8+
-- 4GB+ RAM recommended
-
+- git
 ## Quick Start
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/datacompose-demo.git
+   git clone https://github.com/datacompose/datacompose-demo.git
    cd datacompose-demo
    ```
 
 2. **Start the Spark cluster**
    ```bash
-   docker-compose up -d
+   docker-compose -f docker-compose.yaml up --build -d
    ```
 
 3. **Access Jupyter Notebook**
@@ -47,7 +46,7 @@ datacompose-demo/
    - Navigate to the `notebooks` directory
 
 4. **Run the email cleaning demo**
-   - Open `email_cleaning.py` in Jupyter
+   - Open `email_cleaning.py` or `email_cleaning.ipynb` in Jupyter
    - Execute cells to see email validation and cleaning in action
 
 ## Email Cleaning Features
@@ -73,7 +72,6 @@ The `docker-compose.yaml` configures:
 ### Running in Development Mode
 
 ```bash
-docker-compose -f docker-compose.yaml up --build
 ```
 
 ### Accessing Spark UI
