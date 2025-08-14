@@ -1,4 +1,4 @@
-# DataCompose Demo
+# DataCompose Playground
 
 A demonstration project showcasing data processing and email cleaning using PySpark with Docker Compose orchestration.
 
